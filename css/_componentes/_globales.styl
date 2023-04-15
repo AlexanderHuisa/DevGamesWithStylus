@@ -1,0 +1,46 @@
+//variables
+FuenteTitulo = 'Lato', sans-serif
+FuenteParrafo = 'Oswald', sans-serif
+color-primario = #333333
+color-secundario = #8841DA
+color-claro = #FFFFFF
+
+//mixin
+contenedor()
+	display: flex
+	width: 90%
+	margin: 40px auto 10px auto
+
+caja-sombra()
+	background: color-claro
+	box-shadow: 0 20px 33px 0 rgba(0,0,0,0.20)
+
+//funcion
+opacidad(color, cantidad){
+    alpha(color,cantidad)
+}
+
+for header in 3 2 1
+	h{header}
+		font-size: 35px - (5*header)
+		margin: 0
+
+titulos(fuente)
+	if fuente == FuenteTitulo
+		font-family: FuenteTitulo
+
+	else 
+		font-family: FuenteParrafo
+		font-weight: 600
+		text-transform: uppercase
+
+    
+	
+
+* 
+	box-sizing: border-box
+
+body
+	margin: 0
+	color: color-primario
+    titulos(FuenteTitulo)
